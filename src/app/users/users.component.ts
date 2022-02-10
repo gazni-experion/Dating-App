@@ -9,6 +9,7 @@ import { UsersService } from '../shared/users.service';
 })
 export class UsersComponent implements OnInit {
   page: number = 1;
+  filter: string = '';
 
   constructor(public userServices: UsersService, public app: AppComponent) {}
 

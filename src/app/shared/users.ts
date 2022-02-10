@@ -4,4 +4,7 @@ export class Users {
   Gender: string = '';
   FavouriteFood: string = '';
   Hobby: string = '';
+  username: string = '';
+  password: string = '';
+  token: string = '';
 }
