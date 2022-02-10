@@ -28,7 +28,8 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "node_modules/bootstrap/scss/bootstrap.scss"
             ],
             "scripts": []
           },
@@ -123,6 +124,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "Dating-App"
+    }
+  },
+  "defaultProject": "Dating-App",
+  "cli": {
+    "analytics": "8364409e-c3f7-4a75-9636-e2fcad360e5f"
+  }
 }
