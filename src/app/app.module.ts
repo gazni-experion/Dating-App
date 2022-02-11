@@ -13,6 +13,7 @@ import { RegistrationComponent } from './registration/registration.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { HomePageComponent } from './home-page/home-page.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { OrderModule } from 'ngx-order-pipe';
 
 
 @NgModule({
@@ -32,7 +33,8 @@ import { NavbarComponent } from './navbar/navbar.component';
     NgxPaginationModule,
     Ng2SearchPipeModule,
     FontAwesomeModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    OrderModule
   ],
   providers: [],
   bootstrap: [AppComponent],

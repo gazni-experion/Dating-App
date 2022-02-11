@@ -9,9 +9,12 @@ import { AppComponent } from '../app.component';
 })
 export class HomePageComponent implements OnInit {
 
-
+user:string;
   constructor() {
   }
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.user = localStorage.getItem('USERNAME');
+
+  }
 }

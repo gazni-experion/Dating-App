@@ -53,13 +53,14 @@ export class LoginComponent implements OnInit {
           this.loginUser = data;
 
           //Username, Role and Token
-          // sessionStorage.setItem('JwtTOKEN', this.loginUser.token);
+          sessionStorage.setItem('JwtTOKEN', this.loginUser.token);
 
           //Check the role based and redirects to respective pages
           if (
             this.loginForm.value.username == 'Arshin' &&
             this.loginForm.value.password == 'Pass'
           ) {
+             localStorage.setItem('USERNAME', this.loginForm.value.username);
             this.router.navigateByUrl('home');
           } else {
             this.error = 'Sorry! You are not authorized to access this page.';
