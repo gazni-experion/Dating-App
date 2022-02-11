@@ -4,6 +4,7 @@ import { Router } from '@angular/router';
 import { Users } from '../shared/users';
 import { AuthService } from '../shared/auth.service';
 import { Login } from '../shared/login';
+import { faCoffee } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-login',
@@ -11,6 +12,7 @@ import { Login } from '../shared/login';
   styleUrls: ['./login.component.scss'],
 })
 export class LoginComponent implements OnInit {
+  
   loginForm!: FormGroup;
   isSubmitted = false;
   error = '';
@@ -58,7 +60,7 @@ export class LoginComponent implements OnInit {
             this.loginForm.value.username == 'Arshin' &&
             this.loginForm.value.password == 'Pass'
           ) {
-            this.router.navigateByUrl('users');
+            this.router.navigateByUrl('home');
           } else {
             this.error = 'Sorry! You are not authorized to access this page.';
           }
